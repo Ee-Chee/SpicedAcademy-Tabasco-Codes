@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px; /*no space between 0 and px*/
+}
+
+header {
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* border: 1px solid #ccc; */
+
+#logo {
+    float: left;
+    width: 12%;
+    margin-left: 3%;
+}
+
+#hamburger {
+    float: right;
+    width: 3%;
+    margin-right: 5%;
+}
+
+.BG {
+    background-image: url("assets/reichstag.jpg");
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.middle-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    font-size: 50px;
+    font-family: Georgia;
+    font-style: italic;
+    /*border: 1px solid #ccc;*/
+}
+
+#link1 {
+    margin: auto; /*to center a block element*/
+    margin-top: 20px;
+    width: 25%;
+    border: 5px solid orange; /*no hashtag for 'orange'*/
+    border-radius: 20px;
+    background-color: yellow;
+    display: block; /*inline-block not ideal for responsive here*/
+    color: orange; /*text color*/
+    font-size: 35px;
+    text-decoration: none;
+    font-style: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.BG2 {
+    background-color: #b3b3cc;
+    overflow: hidden;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.content {
+    float: left;
+    padding: 1% 3% 1% 8%;
+    width: 50%;
+    font-family: Georgia;
+    /*border: 1px solid #ccc;*/
+    height: 150px; /*set a height so that 4 content elements float properly(same size of elements), also, as a height reference for content-img*/
+}
+
+.content-img {
+    float: left;
+    width: 12%;
+    margin-right: 5%;
+    display: inline-block;
+    /*border: 1px solid #ccc;*/
+}
+
+p {
+    margin: 0; /*unlike div, the default margin of p- top & bottom: 1em*/
+}
+
+footer {
+    background-color: #52527a;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 800px) {
+    #logo {
+        width: 35%;
+        margin-left: 5%;
+    }
+
+    #hamburger {
+        float: right;
+        width: 10%;
+        margin-right: 8%;
+    }
+    .BG {
+        height: 200px;
+        width: 100%;
+    }
+    .middle-text {
+        font-size: 25px;
+        width: 100%;
+    }
+    #link1 {
+        font-size: 20px;
+        border-width: 2px;
+        width: 50%;
+    }
+
+    .BG2 {
+        padding-top: 15%;
+    }
+    .content {
+        width: 100%;
+        padding: 0 20% 10% 20%;
+        height: 120px;
+    }
+    .content-img {
+        height: 100%;
+    }
+    /*height: 100%; /*that's = 120px, so that all texts align vertically on the right hand side*/
+    /*INPORTANT:Must set its parent a height value first before using %*/
+}

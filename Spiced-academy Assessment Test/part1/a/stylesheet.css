@@ -1,0 +1,44 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#Meow1 {
+  float: right;
+  border-color: #b3b3b3;
+}
+
+#Meow2 {
+  float: left;
+  border-color: #0000ff;
+}
+
+#Meow3 {
+  clear:both;
+  display:block;
+  margin-left: auto;
+  margin-right: auto; /*center image*/
+  border-color: orange;
+}
+
+
+.common {
+  border: 3px solid;
+  width: 200px;
+  height: 200pX;
+}
+
+@media only screen and (max-width:500px) {
+  /*arrange in a vertical line*/
+  .common {
+  float: none !important; /*id overrides class, !important needed*/
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150pX;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+</style>

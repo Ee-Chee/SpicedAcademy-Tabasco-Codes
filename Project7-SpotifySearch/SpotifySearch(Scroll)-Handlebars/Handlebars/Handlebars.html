@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Handlebars</title>
+        <link rel="stylesheet" href="styles.css" />
+    <style>
+        img{
+            width:300px;
+            height: 400px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="heading"></div>
+
+        <div class="container"></div>
+
+        <script id="greeting" type="text/x-handlebars-template">
+            <div>
+                <h1> {{ headline }}</h1>
+            </div>
+        </script>
+
+        <script id="contents" type="text/x-handlebars-template">
+            {{#object}}
+                {{#authors}}
+                    <img src="{{photo}}"/>
+                    <p>{{name}}, {{born}}-{{died}}, one of my favourite authors. Writings such as {{#selectedWritings}}<strong>{{this}},</strong>{{/selectedWritings}} are popular around the world. I really into {{gender}} famous quote: "{{quote}}"
+                    </p>
+                {{/authors}}
+            {{/object}}
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

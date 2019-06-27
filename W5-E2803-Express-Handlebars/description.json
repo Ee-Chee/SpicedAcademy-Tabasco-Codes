@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Carousel",
+        "description": "I would rate it 7 stars out of 10 in terms of its difficulty level in this project. I learned quite bunch of things in this project."
+    },
+    {
+        "name": "ConnectFour",
+        "description": "I would rate it 9 stars out of 10 in terms of its difficulty level in this project. However, I enjoyed doing this project, handled all possible errors might occur. Spent lot of time in this project. It is literally my first ever prefect project."
+    },
+    {
+        "name": "Homepage",
+        "description": "I would rate it 8 stars out of 10 in terms of its difficulty level in this project. Mastering the positioning technique and css in this project"
+    },
+    {
+        "name": "IncrementalSearch",
+        "description": "I would rate it 5 stars out of 10 in terms of its difficulty level in this project. It is not really difficult. Mastered event listeners in this project."
+    },
+    {
+        "name": "ResizablePanes",
+        "description": "I would rate it 8 stars out of 10 in terms of its difficulty level in this project. The most difficult part was finding solution for the movable slide bar. Not really into this project."
+    },
+    {
+        "name": "Ticker",
+        "description": "I would rate it 6 stars out of 10 in terms of its difficulty level in this project. Not a tough project. Boring project, not much to talk about it."
+    }
+]

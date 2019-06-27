@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>MyStudio</title>
+        <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin:0;
+            background-color: aqua;
+        }
+
+        h1, h2{
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        input, select, button{
+            margin: 10px;
+        }
+
+        .results{
+            padding:80px;
+            font-size: 25px;
+        }
+
+        img{
+            width: 400px;
+            height: 300px;
+            margin-right: 150px;
+        }
+
+        .subcontainer{
+            border: 2px solid black;
+            display:flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+    </style>
+    </head>
+
+    <body>
+
+        <h1>Spotify Search</h1>
+        <div class="container">
+            <input />
+            <select>
+                <option value="artist">
+                    artist
+                </option>
+                <option value="album">
+                    album
+                </option>
+            </select>
+            <button id="go">GO!</button>
+        </div>
+        <h2></h2>
+        <div class="results">
+        </div>
+        <div class="container">
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="jsfile.js"></script>
+    </body>
+</html>

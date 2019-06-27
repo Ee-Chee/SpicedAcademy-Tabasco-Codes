@@ -1,0 +1,32 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+div {
+  color: black;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+#li1 {
+  color: orange;
+  font-family: Verdana;
+}
+
+#li2 {
+  color: red;
+  font-family: Impact;
+}
+
+#li3 {
+  color: pink;
+  font-family: Georgia;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+</style>

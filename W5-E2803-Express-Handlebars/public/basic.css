@@ -1,0 +1,15 @@
+body {
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    border: 2px solid yellow;
+    padding: 10px 30px;
+}
+
+.myProjects {
+    display: flex;
+}

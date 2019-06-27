@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>MyStudio</title>
+        <style>
+        .results{
+            padding:50px;
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            width:100px;
+            height:120px;
+        }
+        .container{
+            display: flex;
+            padding: 10px;
+        }
+        .details{
+            font-size: 20px;
+            cursor:pointer;
+            padding: 50px 30px;
+        }
+        p{
+            margin-left: 80px;
+
+        }
+        </style>
+        <!-- <link rel="stylesheet" href="styles.css" /> -->
+    </head>
+    <body>
+        <h1>Please enter your Github username and password</h1>
+        <input name="username" type="text" autocomplete="off" placeholder="username" />
+        <input name="password" type="password" autocomplete="off" placeholder="password" />
+        <h2>And now please enter a Github username</h2>
+        <input name="user-to-search" type="text" autocomplete="on" placeholder="search..." />
+        <button id="go-button">POKEMON GO!</button>
+        <div class="results">
+        </div>
+
+
+
+
+        <script id="test" type="text/x-handlebars-template">
+
+                    {{#data}}
+                    <div class="container">
+                        <img src="{{owner/avatar_url}}"/>
+                        <div class="details">{{name}}</div>
+                    </div>
+                    <div class="commits">
+                    </div>
+                    {{/data}}
+
+        </script>
+
+        <script id="test2" type="text/x-handlebars-template">
+        {{#data2}}
+        <p>
+            {{commit/message}}
+        </p>
+        {{/data2}}
+        </script>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="jsfile.js"></script>
+    </body>
+</html>

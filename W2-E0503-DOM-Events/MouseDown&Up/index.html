@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>MyStudio</title>
+        <!--<link rel="stylesheet" href="mystyles.css">*/-->
+    </head>
+    <body>
+        <script>
+            //Js here
+            var x = document.createElement("div");
+            x.style.width = "100px";
+            x.style.height = "100px";
+            x.style.border = "1px solid black";
+            document.body.appendChild(x);
+
+            function rgbColors() {
+                var rgbArr = [];
+                for (var i = 0; i < 3; i++) {
+                    var r = Math.floor(Math.random() * 256);
+                    rgbArr.push(r);
+                }
+                return rgbArr;
+            }
+
+            x.addEventListener("mousedown",function(){
+                var rgb = rgbColors();
+                x.style.background = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')';
+            })
+
+            x.addEventListener("mouseup",function(){
+                rgb = rgbColors();
+                x.style.background = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')';
+            })
+        </script>
+    </body>
+</html>

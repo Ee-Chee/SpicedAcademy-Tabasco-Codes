@@ -1,0 +1,5 @@
+{
+    "hello": "a",
+    "hihi": "b"
+}
+/* require can be used for JSON! directly access! */

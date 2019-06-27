@@ -1,0 +1,24 @@
+1. should I worry about this bug right now?
+-  in real dev environment — you would have rules about prioritizing bugs / Product Manager 
+- otherwise — does the bug break your code? Does the bug prevent the user from experiencing your website to its fullest? If yes, then fix!!!! If no, then mark the bug and get to it later 
+
+
+2. read the error message! 
+
+- if you see an error message in the Dev tools — it's likely a front-end error! 
+- if you see an error message in the Terminal — it's like a back-end error! 
+
+
+3. ask guiding questions:
+
+- What did I expect would happen?
+- What actually happened?
+- These questions help you get an idea of where to START looking for the bug! 
+
+
+4. ask a classmates / colleague
+
+- rubber duck principle! The process of thinking outloud to someone else can help you find the bug 
+- … and if that doesn't work hopefully the other person can help you figure it out 
+
+5. ask a teacher / your senior

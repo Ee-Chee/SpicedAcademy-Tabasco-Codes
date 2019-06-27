@@ -1,0 +1,1 @@
+{"version":3,"sources":["fn.js"],"names":["module","exports","fn"],"mappings":"AAAAA,OAAOC,OAAP,GAAiB,SAASC,EAAT,GAAc,CAC9B,CADD","file":"fn.js","sourcesContent":["module.exports = function fn() {\n};\n"]}

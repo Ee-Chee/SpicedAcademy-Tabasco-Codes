@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px; /*no space between 0 and px*/
+}
+
+header {
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* border: 1px solid #ccc; */
+
+#logo {
+    float: left;
+    width: 12%;
+    margin-left: 3%;
+}
+
+#hamburger {
+    float: right;
+    width: 3%;
+    margin-right: 5%;
+}
+
+#hamburgermenu {
+    position: fixed; /*dont use absolute, it doesnt cover the content out of the window(when scrolling down)*/
+    left: 0; /*cooler way of making a background*/
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; /*stack on other elements*/
+    background-color: rgba(0, 0, 0, 0.33);
+    visibility: hidden; /*better than using display:none(making duration of animation failed, pops in a sudden) or opacity(making elements beneath unclickable)*/
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+#exit {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#selection {
+    margin-top: 80px;
+}
+
+#selection a {
+    text-align: left;
+    font-size: 25px;
+    color: blue;
+    margin: 0 0 25px 40px;
+    display: block;
+    text-decoration: none;
+}
+
+#logout {
+    text-align: left;
+    color: blue;
+    margin: 0 0 25px 40px;
+}
+
+.BG {
+    background-image: url("assets/reichstag.jpg");
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.middle-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    font-size: 50px;
+    font-family: Georgia;
+    font-style: italic;
+    /*border: 1px solid #ccc;*/
+}
+
+#link1 {
+    margin: auto; /*to center a block element*/
+    margin-top: 20px;
+    width: 25%;
+    border: 5px solid orange; /*no hashtag for 'orange'*/
+    border-radius: 20px;
+    background-color: yellow;
+    display: block; /*inline-block not ideal for responsive here*/
+    color: orange; /*text color*/
+    font-size: 35px;
+    text-decoration: none;
+    font-style: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*standard answer from David, making content-img bigger and texts align uniformly on the left*/
+
+.BG2 {
+    background-color: #b3b3cc;
+    padding: 40px;
+    text-align: center;
+}
+
+.content {
+    text-align: left;
+    display: inline-block; /*use that instead of float:left*/
+    position: relative;
+    padding: 0 20px 0 70px; /*important setting distance away from content-img*/
+    width: 45%;
+    vertical-align: top; /*inlineblock, so originally all contents 'lying' down and vertical-align lifts them up, hanging them.*/
+    margin-bottom: 30px;
+    /*border: 1px solid #ccc;*/
+}
+
+.content-img {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 40px;
+    /*border: 1px solid #ccc;*/
+}
+
+p {
+    margin: 0; /*unlike div, the default margin of p- top & bottom: 1em*/
+}
+
+footer {
+    background-color: #52527a;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 800px) {
+    #logo {
+        width: 35%;
+        margin-left: 5%;
+    }
+
+    #hamburger {
+        float: right;
+        width: 10%;
+        margin-right: 8%;
+    }
+    .BG {
+        height: 200px;
+        width: 100%;
+    }
+    .middle-text {
+        font-size: 25px;
+        width: 100%;
+    }
+    #link1 {
+        font-size: 20px;
+        border-width: 2px;
+        width: 50%;
+    }
+
+    .content {
+        width: auto;
+        display: block;
+    }
+}

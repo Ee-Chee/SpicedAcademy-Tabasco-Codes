@@ -1,0 +1,74 @@
+console.log(["a", "b"]==["a", "b"]) => false
+console.log({a:"b"}=={a:"b"} => false
+
+Whenever js sees array/object, it creates memory at a new location, the == checking if both are allocated at the same memory slot:
+memory slot 1: ..
+memory slot 2: ..
+memory slot 3: ["a", "b"]
+memory slot 4: ["a", "b"]
+And by default, js executes only shallow check which means contents/details are ignored. Jest executes deep check.
+
+///////////////////////////////////////////
+var arr = ["a", "b"];
+var newArr = arr; //which means it is refering/pointing at the same location of memory as arr. If values of newArr changes, arr changes too.
+
+//this happens to object too since array is one kinda of object
+//////////////////////////////////////////
+How do we clone arr then? so that the contents are duplicated but not pointing at the same location of memory.
+
+For Object:
+var obj = {name:"Ivana"}
+var newObj = Object.assign({},obj) //two arg passed. 1st creates one object at the new location of memory. 2nd contents of obj is passed
+OR
+var newObj = {...obj} //{} creates new obj and ... spread operator loops through the contents of obj and saved inside the new {}
+
+let test = { a: "b", c: "d" };
+let test2 = { ...test, f: "g" };
+let test3 = { ...test, a: "b" };
+
+console.log(test, test2, test3); =>
+{a: "b", c: "d"}
+{a: "b", c: "d", f: "g"}
+{a: "b", c: "d"}
+
+For Array:
+Use MAP because
+1st: cloning Array
+2nd: modifying all items in an array
+3rd: returns a new Array
+
+var arr = ["a", "b"];
+var newArr = arr.map(function(item){
+return item;
+});
+// loop through arr and return values inside newArr
+// a callback function is passed inside map. The arg passed inside callback is the content of arr (looping each data)
+
+OR
+var newArr = arr.map(item=>item);
+//arrow function: (item(passed)=>item(return))
+
+//////////////////////////////////////////////////////////////////////////
+How to remove some unwanted data of an array while creating a new array? The picky one
+Use FILTER because
+1st: filter out some unwanted contents
+2nd: returns new Array
+3rd: loop through array too
+var newArr = arr.filter(function(elem){
+    return elem !== "a"
+})
+//loop through contents and return values that meet the condition
+results: newArr => ["b"]
+
+////////////////////////////////Object.values() and Object.keys()
+let test = { a:b, c:d }
+Object.values(test) => [b, d]
+Object.keys(test) => [a,c]
+
+////////////////////////////////////Delete a property and its value of an object
+let test = { a:b, c:d }
+delete test.a; => {c:d}
+
+////////////////////Dont push an obj inside an array
+let test = [{ a: "b" }, { c: "d" }];
+test.push({ e: "f" }); => 3 length of array?

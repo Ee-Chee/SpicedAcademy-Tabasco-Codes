@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Great Image Board</title>
+        <link rel="stylesheet" href="/css/styles.css" />
+    </head>
+    <body>
+        <div id="main">
+            <first-component
+                @change="nameChange"
+                funky="duck"
+                v-bind:nickname="greetee"
+            ></first-component>
+
+            <input type="file" @change="upload" />
+            <h1 :class="className + ' ugly'" :id="className">
+                hi, {{ greetee }}
+            </h1>
+            <input v-model="greetee" />
+            <ul v-if="cities.length">
+                <li @click="click(city.name)" v-for="city in cities">
+                    {{city.name}}, {{city.country}}
+                </li>
+            </ul>
+
+            <first-component
+                @change="nameChange"
+                funky="chicken"
+                :nickname="greetee"
+            ></first-component>
+        </div>
+
+        <script type="text/x-template" id="template">
+            <div @click="click" class="first">
+                <h1>This is my first template!!!!</h1>
+                Hello, {{name}}
+                <p>{{nickname}}</p>
+            </div>
+        </script>
+
+        <script src="/js/vue.js"></script>
+        <script src="/js/axios.min.js"></script>
+        <script src="/js/first.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

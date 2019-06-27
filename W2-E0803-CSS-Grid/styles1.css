@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 70px auto 30px;
+    min-height: 100vh;
+}
+
+header {
+    background-color: orange;
+}
+
+footer {
+    background-color: pink;
+}
+
+main {
+    background-color: aqua;
+}
+
+/* border: 1px solid #ccc; */

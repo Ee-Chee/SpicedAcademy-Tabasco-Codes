@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>MyStudio</title>
+        <!--<link rel="stylesheet" href="mystyles.css">*/-->
+    </head>
+    <body>
+        <script>
+            //Js here
+            var x = document.createElement("div");
+            x.style.width = "100px";
+            x.style.height = "100px";
+            x.style.position = "absolute";
+            x.style.background = "blue";
+            document.body.appendChild(x);
+            x.style.display="none";
+
+            document.addEventListener("mousemove",function(e){
+                x.style.display="block";
+                x.style.top=e.clientY-50 + "px" ;
+                x.style.left=e.clientX-50 + "px";
+            })
+        </script>
+    </body>
+</html>

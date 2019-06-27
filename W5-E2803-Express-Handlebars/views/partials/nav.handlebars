@@ -1,0 +1,8 @@
+<!-- unlike layout, there is no need to define it in object during rendering for partials-->
+<!-- you need partials when you are making a constant template like header, nav footer... -->
+<!-- / is added in the first position because we are using GET -->
+<div class="myProjects">
+{{#proname}}
+<a id="{{.}}" href="/projects/{{.}}/description">{{.}}</a>
+{{/proname}}
+</div>

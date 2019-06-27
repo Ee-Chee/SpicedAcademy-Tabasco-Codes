@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>MyStudio</title>
+        <!--<link rel="stylesheet" href="mystyles.css">*/-->
+    </head>
+    <body>
+        <script>
+            //Js here
+            var x = document.createElement("div");
+            x.style.width = "200px";
+            x.style.height = "200px";
+            x.style.background = "blue";
+            document.body.appendChild(x);
+
+            var y = document.createElement("div");
+            y.style.width = "50px";
+            y.style.height = "50px";
+            y.style.background = "aqua";
+            x.appendChild(y);
+
+            function rgbColors() {
+                var rgbArr = [];
+                for (var i = 0; i < 3; i++) {
+                    var r = Math.floor(Math.random() * 256);
+                    rgbArr.push(r);
+                }
+                return rgbArr;
+            }
+
+            x.addEventListener("click",function(){
+                var rgb = rgbColors();
+                x.style.background = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')';
+            })
+
+            y.addEventListener("click",function(e){
+                e.stopPropagation();
+                rgb = rgbColors();
+                y.style.background = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')';
+            })
+        </script>
+    </body>
+</html>

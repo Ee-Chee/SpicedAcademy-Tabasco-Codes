@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>MyStudio</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <canvas id="cvs" width="500" height="500"></canvas>
+        <script>
+            var ctx = document.getElementById("cvs").getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(250, 250, 50, 0.5 * Math.PI, 1.5 * Math.PI);
+            ctx.stroke();
+
+            //(a,b,c,d,e,f(optional)) d=start, e=end. clockwise 1.5pi 0pi/2pi 0.5pi 1pi
+        </script>
+    </body>
+</html>

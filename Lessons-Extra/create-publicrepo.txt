@@ -1,0 +1,19 @@
+go to github, login, click "+" beside profile pic, select new repo
+/{name ur repo *important}, select public, create repo
+create a folder on desktop, cd into it, type git init
+then, type git remote add origin https://github.... (copy this link from the just-created-repo page)
+checking: git remote -v.
+Shall see:
+origin  https://github.com/Ee-Chee/final-project-spiced.git (fetch)
+origin  https://github.com/Ee-Chee/final-project-spiced.git (push)
+touch README.md //try push this for the first time
+optional: create a new branch if you want (git checkout new-branch) or check branch (git branch)
+ls
+git status
+git add * (git add -f * if ignore file needed to be pushed)
+git status
+git commit -m "first ever"
+git push origin master (or the new branch name just created)
+Ee-Chee
+ssssss-productN
+refresh the github page

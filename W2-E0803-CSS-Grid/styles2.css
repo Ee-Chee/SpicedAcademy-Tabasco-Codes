@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.items {
+    display: inline-grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    vertical-align: top;
+}
+
+.i1 {
+    background-color: grey;
+}
+
+.i2 {
+    background-color: black;
+}
+
+.i3 {
+    background-color: blue;
+}
+
+.i4 {
+    background-color: purple;
+}
+
+#subi1 {
+    grid-area: 1/2/2/3;
+    background-color: orange;
+}
+
+#subi2 {
+    grid-area: 2/2/3/3;
+    background-color: yellow;
+}
+
+#subi3 {
+    grid-area: 2/1/3/2;
+    background-color: green;
+}
+
+#subi4 {
+    grid-area: 1/1/2/2;
+    background-color: pink;
+}
+
+/* border: 1px solid #ccc; */

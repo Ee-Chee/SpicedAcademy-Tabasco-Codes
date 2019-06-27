@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Handlebars</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="heading"></div>
+
+        <div class="container"></div>
+
+
+        <script id="greeting" type="text/x-handlebars-template">
+            <div>
+                <h1> {{ headline }}</h1>
+            </div>
+        </script>
+
+        <script id="foods" type="text/x-handlebars-template">
+            {{#foodsArray}}
+                <div class="eachFood">
+                    <h2>{{ country }}</h2>
+                    <h3>{{ name }}</h3>
+                    <ul>
+                        {{#ingredients}}
+                            <li>{{ this }}</li>
+                        {{/ingredients}}
+                    </ul>
+                </div>
+            {{/foodsArray}}
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
