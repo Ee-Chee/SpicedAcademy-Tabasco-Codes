@@ -1,7 +1,7 @@
 # Project 3 Kitties Carousel
 
 ## Part 1 Create carousel effect
-<a href="assets">These four image assets</a> are used. The carousel fills the browser horizontally. Each image should stay on screen for 2 seconds before sliding off.
+<a href="assets">These four image assets</a> are used. The carousel fills the browser horizontally. Each image stays on screen for 2 seconds before sliding off.
 
 ## Part 2 Make dot-indicators
 
