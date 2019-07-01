@@ -1,4 +1,4 @@
-## Project 1 Let's make a webpage!
+# Project 1 Let's make a webpage!
 
 ## Part 1 Create a webpage 
 By means of using the image assets that can be found in the <a href="assets">assets directory</a>, the following webpage is created:
