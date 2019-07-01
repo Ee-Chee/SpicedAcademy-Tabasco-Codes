@@ -1,4 +1,4 @@
-# Project 1 Ticker
+# Project 2 Ticker
 
 ## Part 1 Animating Headlines 
 When the page loads, the ticker area is empty and headlines start crawling in from the right. The animation continues forever. When a headline moves all the way off the screen it jumps to the end. 
