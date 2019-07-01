@@ -5,17 +5,6 @@ By means of using the image assets that can be found in the <a href="assets">ass
 
 <img src="big.png" alt="webpage">
 
-
-
-
-
-
-
-
-
-
-
-
 ## Part 2 Make it responsive
 As a next step the webpage is improved to display nicely on phones.
 
