@@ -5,18 +5,15 @@ By means of using the image assets that can be found in the <a href="assets">ass
 
 <img src="big.png" alt="webpage">
 
-
 ## Part 2 Make it responsive
 As a next step the webpage is improved to display nicely on phones.
 
 <img src="mini.png" alt="webpage">
 
-
 ## Part 3 Sliding menu and grey-out background
-Upon clicking the 'hamburger' menu on the top right corner, the background is grey-outed and the menu sliding from the right. Clicking the 'X' button or the grey-outed background shall return back to the webpage.
+Upon clicking the 'hamburger' menu on the top right corner, the background is grey-outed and the menu sliding in from the right. Clicking the 'X' button or the grey-outed background shall return back to the webpage.
 
 <img src="menu.png" alt="menu">
-
 
 **_NOTES_**: 
 * Coding technologies: HTML, CSS and Javascript
