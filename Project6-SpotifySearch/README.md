@@ -2,14 +2,15 @@
 Spotify used to have a [search API](https://developer.spotify.com/web-api/search-item/) that didn't require authentication and supported CORS. It now requires authentication and pretty much can't be used via ajax directly. 
 
 ## Part 1 Text field with two 'artist' and 'album' options
-A text field is placed at the top of the page. There are also a <select> element containing the options "artist" and "album" and a submit button.
+A text field is placed at the top of the page. There are also a 'select' element containing the options "artist" and "album" and a submit button.
+
 
 ## Part 2 Make AJAX request
 When the user submits, all the query string parameters are passed to `https://elegant-croissant.glitch.me/spotify`. This url will make a request to the Spotify search API with the specified parameters and send back the exact JSON that Spotify responds with. In order words, this url is used to conduct searches for artists and albums.
 
 ## Part 3 Display search results
 * The search term in quotes preceded by the string 'Results for ' is displayed before the results.
-* For each result, one of the images listed in the payload as well as the artist name or album title is showed. Both items are linked to the url provided in the payload for playing music from that album or artist (if users are not logged in to Spotify they will see a page prompting them to log in)
+* For each result, one of the images listed in the payload as well as the artist name or album title is showed. Both items are linked to the url provided in the payload for playing music from that album or artist (if users are not logged in to Spotify they will see a page prompting them to log in).
 * The results that do not have any images are handled. 
 * If there are no results for a search, a 'no results' message is displayed.
 
