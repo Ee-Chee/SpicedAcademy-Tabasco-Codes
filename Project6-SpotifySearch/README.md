@@ -19,10 +19,8 @@ By default, the number of results per request is limited to 20. If there are mor
 <img src="ledzep.gif">
 
 ## Part 5 Infinite Scroll
-If the string `scroll=infinite` appears in the query string when the page loads, no "More" button should appear. Instead, when users scroll down to the bottom of the listed results, the next page of results should be automatically loaded and appended.
+If the string `scroll=infinite` appears in the query string when the page loads, no "More" button should appear. Instead, when users scroll down to the bottom of the listed results, the next page of results is automatically loaded and appended.
 
-Note: 
 **_NOTES_**:
 * Coding technologies: HTML, CSS, Javascript, JSON, Jquery and AJAX. 
-* For the reasons described in <a href="http://ejohn.org/blog/learning-from-twitter/">this blog post</a>, do not use scroll events to accomplish this.
-
+* For the reasons described in <a href="http://ejohn.org/blog/learning-from-twitter/">this blog post</a>, do not use scroll events.
