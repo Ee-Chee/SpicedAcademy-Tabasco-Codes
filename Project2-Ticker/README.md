@@ -5,7 +5,7 @@ When the page loads, the ticker area is empty and headlines start crawling in fr
 
 <img src="ticker.gif">
 
-### Part 2 Pause the animation
+## Part 2 Pause the animation
 When a user mouses onto a headline, the animation pauses and the headline turns blue and gain an underline to indicate that it can be clicked. If the user mouses out without clicking, the animation should resume.
 
 **_NOTES_**: 
