@@ -1,5 +1,5 @@
 # Project 6 Spotify Search
-Spotify used to have a [search API](https://developer.spotify.com/web-api/search-item/) that didn't require authentication and supported CORS. It now requires authentication and pretty much can't be used via ajax directly. 
+Spotify used to have a [search API](https://developer.spotify.com/web-api/search-item/) that didn't require authentication and supported CORS. It now requires authentication and pretty much can't be used via AJAX directly. 
 
 <img src="ledzep.gif">
 
@@ -20,7 +20,7 @@ When the user submits, all the query string parameters are passed to `https://el
 By default, the number of results per request is limited to 20. If there are more results, there is a field in the payload that provides an url to get the next batch. The presence of this field decides whether or not to include a "more" link at the bottom of the result list. 
 
 ## Part 5 Infinite Scroll
-If the string `scroll=infinite` appears in the query string when the page loads, no "More" button should appear. Instead, when users scroll down to the bottom of the listed results, the next page of results is automatically loaded and appended.
+If the string `scroll=infinite` appears in the query string when the page loads, no "more" button should appear. Instead, when users scroll down to the bottom of the listed results, the next page of results is automatically loaded and appended.
 
 **_NOTES_**:
 * Coding technologies: HTML, CSS, Javascript, JSON, Jquery and AJAX. 
