@@ -23,5 +23,5 @@ When users click on a repo, a request to <a href="https://developer.github.com/v
 
 **_NOTES_**:
 * Coding technologies: HTML, CSS, Javascript, Handlebars, JSON, Jquery and AJAX.
-* There should be no ajax request made when the user has only entered her username and password. The only ajax requests to make are the ones to get the repos and the commits. There is no "logging in" to the API. The user's username and password should only be used to construct the `Authorization` header that must be included in all requests to get the repos and commits.
+* There should be no AJAX request made when the user has only entered her username and password. The only ajax requests to make are the ones to get the repos and the commits. There is no "logging in" to the API. The user's username and password should only be used to construct the `Authorization` header that must be included in all requests to get the repos and commits.
 * NEVER PUT GITHUB USER NAME AND PASSWORD INTO the SOURCE CODE!
