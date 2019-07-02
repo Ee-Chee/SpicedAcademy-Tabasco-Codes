@@ -25,3 +25,4 @@ If the string `scroll=infinite` appears in the query string when the page loads,
 **_NOTES_**:
 * Coding technologies: HTML, CSS, Javascript, JSON, Jquery and AJAX. 
 * For the reasons described in <a href="http://ejohn.org/blog/learning-from-twitter/">this blog post</a>, do not use scroll events.
+* cd into working directory and start the http-server. Insert the '?scroll=infinite' query string at the endpoint such as http://localhost:8081/SpotifySearch(Scroll)/?scroll=infinite to make it scrollable.
