@@ -2,7 +2,7 @@
 The objective of this project is to keep all projects in a directory named "Projects" and enable users to access and view each project by changing the url. 
 
 ## Part 1 Create a server
-* Create a server and listen on port 8080. A directory named "projects" is added to the portfolio directory, containing all projects done before.
+* Create a server and listen on port 8081. A directory named "projects" is added to the portfolio directory, containing all projects done before.
 
 ## Part 2 Acquire the given url and determine which project to serve
 * The `fs` module is used to determine what files are available to serve. If there is a file in the projects directory corresponding to the `url` property of the request object, that file is served by <a href="https://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options">creating a read stream</a> and <a href="https://nodejs.org/api/stream.html#stream_readable_pipe_destination_options">piping</a> it to the response. 
@@ -53,3 +53,6 @@ Does the request url correspond to an item in the projects folder?
                                 Redirect to the request url             Serve the index.html file 
                                 with a slash appended to it             that is in the directory
 ```
+**_NOTES_**:
+* Coding technologies: HTML, CSS, Javascript and Node.js.
+
