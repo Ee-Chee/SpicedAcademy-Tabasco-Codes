@@ -15,7 +15,7 @@ The <a href="https://developer.twitter.com/en/docs/tweets/timelines/api-referenc
 * Other urls may still apear in the text. This is because Twitter includes in the tweet text the urls to images and videos that were included in the tweet. Just as the links in a tweet are listed in the tweet's `entities.urls` array, the media urls will be listed in the `entities.media` array. This array is looped through to remove those unwanted media urls from the text.
 
 ## Part 5 Server side
-In Express app, a static directory is created and Ticker files (see [Project 2](https://github.com/Ee-Chee/SpicedAcademy-Tabasco-Codes-Week1to6/tree/master/Project2-Ticker))are copied into it (except for the json file containing the links, which will not be needed). You should also create a route to handle the ajax request that your client-side Javascript makes (e.g., if your json file had been called "links.json", the url for your route should be `/links.json`). It is in this route that you should initiate the retrieval of the token and then the tweets from the Twitter API. Finally, you should send the tweets back to the client using `res.json`.
+In Express app, a static directory is created and Ticker files (see [Project 2](https://github.com/Ee-Chee/SpicedAcademy-Tabasco-Codes-Week1to6/tree/master/Project2-Ticker))are copied into it. A route '/data.json' is made to handle the AJAX request that the client-side Javascript makes. In this route, the retrieval of the token and then the tweets from the Twitter API are initialized. Finally, the tweets are sent back to the client using `res.json`.
 
 <img src="masterpiece.png">
 
