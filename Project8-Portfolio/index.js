@@ -10,8 +10,8 @@ http.createServer(function(req, res) {
     }
 
     const myPath = path.normalize(__dirname + "\\Projects" + req.url); //normalize a path by resolving or fixing '...' '\\\\' etc. see w3schools
-    // console.log(myPath);
-    // console.log(req.url);
+    console.log(myPath);
+    console.log(req.url);
     if (!myPath.startsWith(__dirname + "\\Projects")) {
         //backslash has its functionality. If it is used in a string, double slash it will do. \ is a path of server.
         //endsWith and startsWith are method of string.prototype.
@@ -52,7 +52,7 @@ http.createServer(function(req, res) {
             return res.end();
         }
     });
-}).listen(8080, () => console.log("Hello Im bot Leng!"));
+}).listen(8081, () => console.log("Hello Im botto!"));
 
 function setContentType(ext) {
     switch (ext) {
